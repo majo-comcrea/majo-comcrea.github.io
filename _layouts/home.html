@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="top-side">
+    <div class="left">
+      <img src="{{ page.img }}" title="{{ page.img-title }}" alt="{{ page.img-title }}"/>
+    </div>
+    <div class="right">
+      {%- if page.title -%}
+        <h1 class="page-heading title-font">{{ page.title }}</h1>
+      {%- endif -%}
+
+      {{ content }}
+    </div>
+  </div>
+
+  <div class="separator">
+    <h2 style="display: none;">{{ page.separator.img-title }}</h2>
+    <img src="{{ page.separator.img }}" title="{{ page.separator.img-title }}" alt="{{ page.separator.img-title }}"/>
+  </div>
+
+  {%- if site.categories['home'].size > 0 -%}
+    <ul class="post-list">
+      {%- for post in site.categories['home'] -%}
+      <li style="border-color: {{ post.title-color }};">
+        <h3 class="title-font" style="color: {{ post.title-color }} !important;">{{ post.title | escape }}</h3>
+        {{ post.content }}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>
