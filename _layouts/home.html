@@ -16,7 +16,7 @@ layout: default
     </div>
   </div>
 
-  <div class="separator">
+  <div class="separator separator-top">
     <h2 style="display: none;">{{ page.separator.img-title }}</h2>
     <img src="{{ page.separator.img }}" title="{{ page.separator.img-title }}" alt="{{ page.separator.img-title }}"/>
   </div>
@@ -30,8 +30,10 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
+
+  <div class="separator">
+    <a href="#" class="button-link">{{ page.call-to-action }}</a>
+  </div>
 
 </div>

@@ -3,13 +3,15 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Bonjour !
-img: "/assets/Majo déclinaison.png"
-img-title: "livre ouvert"
+img: "/assets/Ordinateur et mains.jpg"
+img-title: "jeune chargée de communication sur son ordinateur"
 separator: 
   img: "/assets/Faîtes fleurir vos idées.png"
   img-title: "Faîtes fleurir vos idées"
+call-to-action: "Découvrez mes prestations en détail"
 ---
+
+<h1 class="title-font">Bonjour !</h1>
 
 <span class="font-color-darker">**Associations**</span>, <span class="font-color-middle">**Artisans**</span>, <span class="font-color-lighter">**Professions libérales**</span>,
 je vous accompagne dans tous vos projets en
@@ -22,4 +24,4 @@ simplicité.
 Je vous propose des solutions sur-mesure à des
 tarifs adaptés à vos budgets.
 
-<a href="#" class="button-link">Parlons de vos projets, voulez-vous ?</a>
+<a href="#" class="button-link button-link-top">Parlons de vos projets, voulez-vous ?</a>

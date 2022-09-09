@@ -35,8 +35,7 @@
   float: left;
 
   img {
-    height: 150px;
-    width: 150px;
+    height: 200px;
   }
 
   &,
@@ -47,7 +46,7 @@
 
 .site-nav {
   align-self: center;
-  padding-top: 47px;
+  padding-top: 65px;
   padding-bottom: 15px;
   border-bottom: 1px solid $grey-color-dark;
   flex: 1;
@@ -66,7 +65,7 @@
 
   .page-link {
     flex: 1;
-    font-size: 18px;
+    font-size: 24px;
     color: $text-color;
     line-height: $base-line-height;
     display: flex;
@@ -133,8 +132,11 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: 20px 0 $spacing-unit 0;
+
+  .wrapper {
+    background: #cef1f9;
+  }
 }
 
 .footer-heading {
@@ -150,60 +152,45 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
-  margin-left: -$spacing-unit / 2;
+  color: $text-color;
+  display: flex;
   @extend %clearfix;
 }
 
 .footer-col {
-  float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  flex: 1;
+  align-self: center;
+  li {
+    line-height: 15px;
+  }
 }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
+  li {
+    text-align: right;
+  }
 }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
+  text-align: center;
+  img {
+    height: 180px;
+  }
 }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+  li {
+    text-align: left;
+    &:nth-child(2) {
+      line-height: 15px;
+    }
   }
 }
-
-@include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
-}
-
-
 
 /**
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
   flex: 1;
 }
 
