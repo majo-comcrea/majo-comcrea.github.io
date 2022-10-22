@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<article class="post prestations">
+
+  <div class="prestations">
+
+    <header class="post-header">
+      <h1 class="post-title title-font font-color-darker">{{ page.title | escape }}</h1>
+    </header>
+  
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    {%- for blockName in page.blocks -%}
+      {%- assign block = page[blockName] -%}
+      <div class="prestations-block">
+        <div class="image-wrapper">
+          <img src="{{ block.image }}" title="{{ block.title }}" alt="{{ block.title }}"/>
+        </div>
+
+        <div class="items {{ blockName }}">
+          {%- for itemName in block.items -%}
+            {%- assign item = block[itemName] -%}
+            <div class="item">
+              <div class="item-left">
+                <span class="item-title"><strong>{{ item.title }}</strong></span>
+                <span class="item-description"><i>{{ item.description }}</i></span>
+                {%- if item.detail -%}
+                  <span class="item-detail"><i>{{ item.detail }}</i></span>
+                {%- endif -%}
+              </div>
+
+              <div class="item-right">
+                <span>{{ item.price }}</span>
+              </div>
+
+              <div class="item-placeholder"></div>
+            </div>
+          {%- endfor -%}
+        </div>
+
+        <h2>{{ block.title }}</h2>
+      </div>
+    {%- endfor -%}
+    
+  <div class="prestations-footer">
+      {%- for blockName in page.blocks -%}
+        <div class="border-placeholer {{ blockName }}">
+        </div>
+      {%- endfor %}
+      <div class="content">
+        <span class="item-title"><strong>{{ page.footer.title }}</strong></span>
+        <span class="item-description"><i>{{ page.footer.description }}</i></span>
+      </div>
+  </div>
+
+</article>
