@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post about">
+
+  <header class="post-header">
+    <h1 class="page-heading title-font font-color-darker">{{ page.page-title | escape }}</h1>
+  </header>
+
+  <div class="post-content top-side">
+    <div class="left">
+      <img src="{{ page.images.header }}" title="{{ page.images.header-img-title }}" alt="{{ page.images.header-img-title }}"/>
+    </div>
+    <div class="right">
+      {{ content }}
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="img-wrapper">
+      <img src="{{ page.images.footer }}" title="{{ page.images.footer-img-title }}" alt="{{ page.images.footer-img-title }}"/>
+    </div>
+  </div>
+
+</article>
