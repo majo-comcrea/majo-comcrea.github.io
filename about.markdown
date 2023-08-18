@@ -1,6 +1,8 @@
 ---
 layout: about
 title: À propos
+show-in-nav: true
+order: 2
 page-title: À propos...
 permalink: /about/
 images: 

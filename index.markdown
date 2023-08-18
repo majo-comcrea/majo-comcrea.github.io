@@ -4,6 +4,7 @@
 
 layout: home
 img: "/assets/Ordinateur et mains.jpg"
+show-in-nav: false
 img-title: "jeune chargée de communication sur son ordinateur"
 separator: 
   img: "/assets/Faîtes fleurir vos idées.png"
@@ -24,4 +25,4 @@ simplicité.
 Je vous propose des solutions sur-mesure à des
 tarifs adaptés à vos budgets.
 
-<a href="#" class="button-link button-link-top">Parlons de vos projets, voulez-vous ?</a>
+<a href="contact" class="button-link button-link-top">Parlons de vos projets, voulez-vous ?</a>

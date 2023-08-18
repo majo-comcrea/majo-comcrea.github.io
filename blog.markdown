@@ -1,6 +1,8 @@
 ---
 layout: blog-home
 title: Blog
+show-in-nav: true
+order: 3
 permalink: /blog/
 ---
 

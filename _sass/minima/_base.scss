@@ -262,3 +262,18 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+.button-link {
+  &-top {
+    position: absolute;
+  }
+  background-color: $grey-color;
+  color: white;
+  font-variant: petite-caps;
+  padding: 10px 15px;
+  margin: 20px 0;
+  display: inline-block;
+  &:hover {
+    background-color: $font-color-lighter;
+  }
+}

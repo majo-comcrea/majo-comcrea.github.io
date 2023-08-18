@@ -1,6 +1,8 @@
 ---
 layout: prestations
 title: Prestations
+show-in-nav: true
+order: 1
 permalink: /prestations/
 blocks: 
     - identite-visuelle

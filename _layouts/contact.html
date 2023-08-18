@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<article class="post contact">
+
+  <header class="post-header">
+    <h1 class="page-heading title-font font-color-darker">{{ page.page-title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    <form
+    action="https://formspree.io/f/mjvqwvoj"
+    method="POST"
+    >
+      <div class="item">
+        <label class="font-color-middle">Vos prénoms et noms</label>
+        <input type="text" name="name" />
+      </div>
+      <div class="item">
+        <label class="font-color-middle">Votre adresse mail</label>
+        <input type="email" name="email" />
+      </div>
+      <div class="item">
+        <label class="font-color-middle">Votre message</label>
+        <textarea name="message"></textarea>
+      </div>
+      
+      <input name="subject" type="hidden" value="New Majo Contact from {{ name }}" />
+      <!-- your other form fields go here -->
+      <div class="item">
+        <button class="button-link" type="submit">Valider</button>
+      </div>
+
+      <div class="item">
+        <label class="font-color-middle">Je vous réponds vite !</label>
+      </div>
+    </form>
+  </div>
+
+</article>
