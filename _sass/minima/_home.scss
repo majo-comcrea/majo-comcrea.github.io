@@ -68,3 +68,29 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .home {
+    .top-side {
+      flex-direction: column;
+
+      .left img {
+        width: 100%;
+      }
+    }
+
+    .button-link.button-link-top {
+      position: relative;
+    }
+
+    .separator img {
+      margin-top: -100px;
+      height: unset;
+      width: 100%;
+    }
+
+    .post-list {
+      flex-direction: column;
+    }
+  }
+}

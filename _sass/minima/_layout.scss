@@ -50,6 +50,7 @@
   padding-bottom: 15px;
   border-bottom: 1px solid $grey-color;
   flex: 1;
+  z-index: 1;
 
   .nav-trigger {
       display: none;
@@ -265,5 +266,15 @@
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-col-wrapper {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .footer-col li {
+    text-align: center;
   }
 }

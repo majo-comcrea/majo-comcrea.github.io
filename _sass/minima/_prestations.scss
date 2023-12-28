@@ -146,3 +146,45 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 425px) {
+  .prestations {
+    div.prestations {
+      padding: 0 30px;
+
+      .prestations-block {
+        flex-direction: column;
+  
+        .image-wrapper {
+          width: unset;
+          margin: 0 -20px -40px;
+  
+          img {
+            position: relative;
+            width: 100%;
+            left: 0;
+          }
+        }
+  
+        .items {
+          padding: 50px 20px;
+  
+          .item {
+            gap: 0;
+  
+            .item-right {
+              position: absolute;
+              right: -45px;
+              width: 66px;
+              padding-right: 10px;
+            }
+    
+            .item-placeholder {
+              flex: 0;
+            }
+          } 
+        } 
+      }
+    } 
+  }
+}
