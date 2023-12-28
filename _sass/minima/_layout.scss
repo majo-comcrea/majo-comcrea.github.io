@@ -270,6 +270,10 @@
 }
 
 @media (max-width: 425px) {
+  .site-title img {
+    height: 150px;
+  }
+
   .footer-col-wrapper {
     flex-direction: column;
     padding: 20px 0;
